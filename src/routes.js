@@ -43,6 +43,9 @@ import Login from "views/pages/Login.js";
 import Rtl from "views/pages/Rtl.js";
 import Lock from "views/pages/Lock.js";
 
+// NEW ROUTES
+import Ticket_User from "views/pages/Ticket_User";
+
 const routes = [
   {
     path: "/dashboard",
@@ -122,6 +125,13 @@ const routes = [
         component: User,
         layout: "/admin",
       },
+      {
+        path: "/ticket-user",
+        name: "Ticket System",
+        mini: "TU",
+        component: Ticket_User,
+        layout: "/admin"
+      }
     ],
   },
   {
